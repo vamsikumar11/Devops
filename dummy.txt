@@ -1,1 +1,177 @@
-hello
+PS C:\Users\lokes\OneDrive\Desktop\547> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+        ../CodeBlocks.lnk
+        ../Lokesh - Chrome.lnk
+        ../Visual Studio Code.lnk
+        ../desktop.ini
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\lokes\OneDrive\Desktop\547> git add index.html
+PS C:\Users\lokes\OneDrive\Desktop\547> git status        
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../CodeBlocks.lnk
+        ../Lokesh - Chrome.lnk
+        ../Visual Studio Code.lnk
+        ../desktop.ini
+
+PS C:\Users\lokes\OneDrive\Desktop\547> git init
+Initialized empty Git repository in C:/Users/lokes/OneDrive/Desktop/547/.git/
+PS C:\Users\lokes\OneDrive\Desktop\547> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\lokes\OneDrive\Desktop\547> git add .
+PS C:\Users\lokes\OneDrive\Desktop\547> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+PS C:\Users\lokes\OneDrive\Desktop\547> git commit -m "intial commit "
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'lokes@LAPTOP-217AAU78.(none)')
+PS C:\Users\lokes\OneDrive\Desktop\547> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+PS C:\Users\lokes\OneDrive\Desktop\547> git commit -m "intial commit "
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'lokes@LAPTOP-217AAU78.(none)')
+PS C:\Users\lokes\OneDrive\Desktop\547> git config --global --list
+fatal: unable to read config file 'C:/Users/lokes/.gitconfig': No such file or directory
+PS C:\Users\lokes\OneDrive\Desktop\547> git config --global user.name "vamsikumar11"
+PS C:\Users\lokes\OneDrive\Desktop\547> git config --global user.email "vamsikumar.garikipati@sasi.ac.in"
+PS C:\Users\lokes\OneDrive\Desktop\547> git commit -m "intial commit "                  
+[master (root-commit) 29d79cc] intial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+PS C:\Users\lokes\OneDrive\Desktop\547> git log 
+commit 29d79cc86ce779d40afb55b373c199738038f013 (HEAD -> master)
+Author: vamsikumar11 <vamsikumar.garikipati@sasi.ac.in>
+Date:   Mon Apr 22 15:02:31 2024 +0530
+
+    intial commit
+PS C:\Users\lokes\OneDrive\Desktop\547> git branch                                      
+* master
+PS C:\Users\lokes\OneDrive\Desktop\547> git branch "vamsi"
+PS C:\Users\lokes\OneDrive\Desktop\547> git branch        
+* master
+  vamsi
+PS C:\Users\lokes\OneDrive\Desktop\547> git checkout vamsi
+Switched to branch 'vamsi'
+PS C:\Users\lokes\OneDrive\Desktop\547> git checkout "vamsi"
+Already on 'vamsi'
+PS C:\Users\lokes\OneDrive\Desktop\547> git branch          
+  master
+* vamsi
+PS C:\Users\lokes\OneDrive\Desktop\547> git checkout master 
+Switched to branch 'master'
+PS C:\Users\lokes\OneDrive\Desktop\547> git remote add origin https://github.com/vamsikumar11/Devops.git
+PS C:\Users\lokes\OneDrive\Desktop\547> git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 218 bytes | 218.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/vamsikumar11/Devops/pull/new/master
+remote:
+To https://github.com/vamsikumar11/Devops.git
+ * [new branch]      master -> master
+PS C:\Users\lokes\OneDrive\Desktop\547> git push origin master
+Everything up-to-date
+PS C:\Users\lokes\OneDrive\Desktop\547> git clone https://github.com/vamsikumar11/Devops.git
+Cloning into 'Devops'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), 197.81 KiB | 61.00 KiB/s, done.
+PS C:\Users\lokes\OneDrive\Desktop\547> cd devops
+PS C:\Users\lokes\OneDrive\Desktop\547\devops> git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 954 bytes | 50.00 KiB/s, done.
+From https://github.com/vamsikumar11/Devops
+   333312a..b3a372c  main       -> origin/main
+Updating 333312a..b3a372c
+Fast-forward
+ dummy.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 dummy.txt
+PS C:\Users\lokes\OneDrive\Desktop\547\devops> git remote -V
+error: unknown switch `V'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]      
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+PS C:\Users\lokes\OneDrive\Desktop\547\devops> git remote -v
+origin  https://github.com/vamsikumar11/Devops.git (fetch)
+origin  https://github.com/vamsikumar11/Devops.git (push)
+PS C:\Users\lokes\OneDrive\Desktop\547\devops>
